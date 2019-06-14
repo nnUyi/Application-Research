@@ -1,9 +1,56 @@
 # coding=utf8
 '''
 created on 2019-06-14 15:16
-
 @author: chadyang
+
+c++中访问linux共享内存，共享内存函数由shmget、shmat、shmdt、shmctl四个函数组成， 在python中可以导入ctypes库，然后将c++中的libc_so链接到程序中,使用这四个函数：
+    shmget:
+    	int shmget(key_t key, size_t size, int shmflg)
+	    Params:
+		key: 0(IPC_PRIVATE)：会建立新共享内存对象
+		     大于0的32位整数：视参数shmflg来确定操作。通常要求此值来源于ftok返回的IPC键值
+		size: 大于0的整数：新建的共享内存大小，以字节为单位
+		      0：只获取共享内存时指定为0
+		shmflg: 0：取共享内存标识符，若不存在则函数会报错
+			IPC_CREAT：当shmflg&IPC_CREAT为真时，如果内核中不存在键值与key相等的共享内存，则新建一个共享内存；\\
+									如果存在这样的共享内存，返回此共享内存的标识符
+			IPC_CREAT|IPC_EXCL：如果内核中不存在键值与key相等的共享内存，则新建一个消息队列；如果存在这样的共享内存则报错
+	    Return:
+	    	成功：返回共享内存的标识符
+		出错：-1，错误原因存于error中
+
+    shmat:
+    	void *shmat(int shmid, const void *shmaddr, int shmflg)
+	    Params:
+		msqid: 共享内存标识符
+		shmaddr: 指定共享内存出现在进程内存地址的什么位置，直接指定为NULL让内核自己决定一个合适的地址位置
+		shmflg: SHM_RDONLY：为只读模式，其他为读写模式
+	    Return:
+	    	成功：附加好的共享内存地址
+		出错：-1，错误原因存于error中
+
+    shmdt断开共享内存连接):
+    	int shmdt(const void *shmaddr)
+	    Params:
+	    	shmaddr：连接的共享内存的起始地址
+	    Return:
+	    	成功：0
+		出错：-1，错误原因存于error中
+
+    shmctl:
+    	int shmctl(int shmid, int cmd, struct shmid_ds *buf)
+	    Params:
+		shmid: 共享内存标识符
+		cmd: IPC_STAT：得到共享内存的状态，把共享内存的shmid_ds结构复制到buf中
+		     IPC_SET：改变共享内存的状态，把buf所指的shmid_ds结构中的uid、gid、mode复制到共享内存的shmid_ds结构内
+		     IPC_RMID：删除这片共享内存
+		buf:
+		     共享内存管理结构体。具体说明参见共享内存内核结构定义部分
+	    Return:
+	        成功：0
+		出错：-1，错误原因存于error中
 '''
+
 import sys
 import ctypes
 import numpy
