@@ -12,13 +12,7 @@ import threading
 import multiprocessing as mp
 import time
 
-def thread1(thread_id):
-    print('This is thread{}!!!'.format(thread_id))
-    time.sleep(5)
-    print('sleeping 5 seconds in thread {}!!!'.format(thread_id))
-
-def test_threading():
-    '''
+'''
       1 python 默认参数创建线程后，不管主线程是否执行完毕，都会等待子线程执行完毕才一起退出，有无join结果一样
       
       2 如果创建线程，并且设置了daemon为true，即thread.setDaemon(True), 则主线程执行完毕后自动退出，不会等待子线程的执行结果。
@@ -31,7 +25,14 @@ def test_threading():
       5 如果线程daemon属性为True， 则join里的timeout参数是有效的， 主线程会等待timeout时间后，结束子线程。此处有一个坑，
         即如果同时有N个子线程join(timeout），那么实际上主线程会等待的超时时间最长为 N ＊ timeout，
         因为每个子线程的超时开始时刻是上一个子线程超时结束的时刻。
-    '''
+'''
+
+def thread1(thread_id):
+    print('This is thread{}!!!'.format(thread_id))
+    time.sleep(5)
+    print('sleeping 5 seconds in thread {}!!!'.format(thread_id))
+
+def test_threading():
     threads = []
     for i in range(3):
         thread = threading.Thread(target=thread1, args=(i,))
