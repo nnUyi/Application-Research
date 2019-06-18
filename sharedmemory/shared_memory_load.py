@@ -150,7 +150,7 @@ def GetIndexShmMemoryToNp(index_shm_key):
     a.__array_interface__ = array_int
     cache_index = numpy.array(a, copy=False)
     # release the pointer
-    shmdt(ptr)
+    # shmdt(ptr)
 
     return cache_index
 
@@ -171,7 +171,7 @@ def GetValueShmMemoryToNpFloat(value_shm_key):
     a.__array_interface__ = array_float
     cache_value = numpy.array(a, copy=False)
     # release the pointer
-    shmdt(ptr)
+    # shmdt(ptr)
 
     return cache_value
 
