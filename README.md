@@ -8,3 +8,8 @@
   - memory analysis
   - multiple threads
   - shared memory read/write
+
+## Week 3
+  - git merge
+  - multi-processes for data preprocessing
+  - logging usage
