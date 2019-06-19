@@ -27,6 +27,9 @@ import time
         因为每个子线程的超时开始时刻是上一个子线程超时结束的时刻。
 '''
 
+# =======================================================================================
+# threading和multiprocessing函数测试
+# =======================================================================================
 def thread1(thread_id):
     print('This is thread{}!!!'.format(thread_id))
     time.sleep(5)
@@ -54,6 +57,41 @@ def test_multiprocessing():
     for t in threads_mp:
         t.join()
 
+# =======================================================================================
+# threading和multiprocessing多进程类模板
+# =======================================================================================
+'''
+    threading.Thread(只使用单cpu核)
+'''
+class DataProcess(threading.Thread):
+    def __init__(self, args):
+        threading.Thread.__init__(self)
+        pass
+    
+    def run(self):
+        # run在运行.start的时候会自动调用run
+        self.your_func()
+        pass
+
+    def your_func(self):
+        pass
+
+
+'''
+    multiprocessing.Process(使用多cpu核)
+'''
+class DataProcess(mp.Process):
+    def __init__(self, args):
+        Process.__init__(self)
+        pass
+    
+    def run(self):
+        # run在运行.start的时候会自动调用run
+        self.your_func()
+        pass
+
+    def your_func(self):
+        pass
 
 if __name__ == '__main__':
     test_threading()
