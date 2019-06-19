@@ -6,6 +6,9 @@ created on 2019-06-14 15:16
 threading和multiprocessing的区别：
     threading：只能利用一个cpu核，然后空闲时分段计算
     multiprocessing：可以利用多个CPU核，并行计算
+
+references:
+    blog: http://www.liujiangblog.com/course/python/81
 '''
 
 import threading
