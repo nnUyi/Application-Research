@@ -39,3 +39,10 @@
       - is_datasplit_enable = True [setting.py line39]
       - is_mp_enable = True [setting.py line41]
       - is_datamerge_enable = True [setting.py line43]
+   
+  (2) 程序基本配置
+  
+    - num_hot_points = 560000 [热点数量：setting.py line45]
+    - num_threads = 12 [进程数量: setting.py line51]
+    - input_obj_path = '../PVP_CF_Ship.obj' [运输船地图路径: setting.py line49]
+    - save_dir = './data_test' [文件保存文件夹: setting.py line53]
