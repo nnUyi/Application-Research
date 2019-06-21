@@ -18,23 +18,23 @@
 ## 1. 代码框架
   - offline_cache_generator/offline_cache_gen.py
   
-      **用于分离热点数据，使用多进程生成热点 <font color="#dd0000">（120个方向）</font><br /> 到障碍物的距离，合并生成的文件保存为npz格式**
+      ***用于分离热点数据，使用多进程生成热点 `（120个方向）` 到障碍物的距离，合并生成的文件保存为npz格式***
 
   - offline_cache_generator/gen_vision_feature.py
  
-      **计算热点<font color="#dd0000">（120个方向）</font><br />到障碍物的距离**
+      ***计算热点`（120个方向）`到障碍物的距离***
       
   - offline_cache_generator/logging_config.py
   
-      **logger的相关配置，用于记录日志**
+      ***logger的相关配置，用于记录日志***
 
   - offline_cache_generator/setting.py
   
-      **程序的基本配置信息**
+      ***程序的基本配置信息***
 
 ## 2. 使用流程
 ### (1) 流程控制:
-  代码分为三个模块：分离热点数据，使用多进程生成热点（120个方向）到障碍物的距离，合并生成的文件保存为npz格式
+  代码分为三个模块：分离热点数据，使用多进程生成热点`（120个方向）`到障碍物的距离，合并生成的文件保存为npz格式
   
       - is_datasplit_enable = True [setting.py line39]
       - is_mp_enable = True [setting.py line41]
@@ -55,6 +55,4 @@
    
 ### (4) 程序运行
 
-     ```python
-        $ python offline_cache_gen.py
-     ```
+    $ python offline_cache_gen.py
