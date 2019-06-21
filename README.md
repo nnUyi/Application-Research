@@ -14,3 +14,4 @@
   - multi-processes for data preprocessing
   - logging usage
   - offline cache generator
+  - [markdown tutorial](http://xianbai.me/learn-md/article/about/readme.html)
