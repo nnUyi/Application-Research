@@ -35,9 +35,10 @@
 ## 2. 使用流程
 ### (1) 流程控制:
   代码分为三个模块：分离热点数据，使用多进程生成热点`（120个方向）`到障碍物的距离，合并生成的文件保存为npz格式
-      - is_datasplit_enable = True [setting.py line39]
-      - is_mp_enable = True [setting.py line41]
-      - is_datamerge_enable = True [setting.py line43]
+  
+  - is_datasplit_enable = True [setting.py line39]
+  - is_mp_enable = True [setting.py line41]
+  - is_datamerge_enable = True [setting.py line43]
       
 ### (2) 程序配置
 - num_hot_points = 560000 [热点数量：setting.py line45]
