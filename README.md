@@ -15,3 +15,6 @@
   - logging usage
   - offline cache generator
   - [markdown tutorial](http://xianbai.me/learn-md/article/about/readme.html)
+
+## Week 4
+  - [markdown learning](http://xianbai.me/learn-md/article/about/readme.html)
