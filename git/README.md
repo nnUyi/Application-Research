@@ -29,15 +29,6 @@
   > 将修改的或者新的文件或者文件夹添加到缓冲区
 - git commit -m "[description]"
   > 将add的文件或者文件夹添加到本地仓库
-- git push
-  - git push
-    > 不带任何参数的git push默认只推送当前分支，当命令行不指定远程分支名，git将查询当前分支的branch.*.remote配置以确定要在往哪里推送
-  - git push origin [local branch]
-    > 将本地分支从本地仓库push到远程分支, 当命令行不指定远程分支名，git将查询当前分支的branch.*.remote配置以确定要在往哪里推送，如果远程主机没有对应地分支则创建一个新的分支
-  - git push [origin] [local branch]:[remote branch]
-    > 将本地指定的分支push到远程指定的分支
-  - git push --all origin
-    > 将所有分支都push到远程主机
 
 ## git分支
 ------------------------------------------
@@ -80,5 +71,18 @@
   > 查看当前分支的最近几次提交
 
 ## git远程同步
+- git push
+  - git push
+    > 不带任何参数的git push默认只推送当前分支，当命令行不指定远程分支名，git将查询当前分支的branch.*.remote配置以确定要在往哪里推送
+  - git push origin [local branch]
+    > 将本地分支从本地仓库push到远程分支, 当命令行不指定远程分支名，git将查询当前分支的branch.*.remote配置以确定要在往哪里推送，如果远程主机没有对应地分支则创建一个新的分支
+  - git push [origin] [local branch]:[remote branch]
+    > 将本地指定的分支push到远程指定的分支
+  - git push --all origin
+    > 将所有分支都push到远程主机
+- git fetch [remote]
+  > 下载远程仓库的所有变动
+- git reset --hard [remote branch]
+  > `远程仓库代码覆盖本地仓库代码`
 
-## git撤销修改
+## [git撤销修改](https://zhuanlan.zhihu.com/p/22734098)
