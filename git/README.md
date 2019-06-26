@@ -1,6 +1,6 @@
 # Git结构
 
-<img src="./data/git.png" width="100" height="30" />
+<img src="./data/git.png" width="500"/>
 
 # git command
 
