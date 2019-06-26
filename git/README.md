@@ -1,7 +1,7 @@
 # Git结构
-<img src="" width="" height="" \>
 
-[TOC]
+<img src="" width="" height="" />
+
 # git command
 
 ## git代码提交
