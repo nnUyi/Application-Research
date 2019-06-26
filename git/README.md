@@ -12,13 +12,13 @@
 # git常用命令
 ## git信息配置
 - git config --list
-  - 说明：查看当前Git的配置信息
+  > 说明：查看当前Git的配置信息
 - git config --global user.name "[name]"
-  - 说明：设置提交代码时的用户名
+  > 说明：设置提交代码时的用户名
 - git config --global user.email "[email]"
-  - 说明：设置提交代码时的用户邮箱
+  > 说明：设置提交代码时的用户邮箱
 - git config --global push.default [matching] | [simple]
-  - 说明：只推送当前分支叫做simple方式；推送所有对应的远程分支的本地分支叫做matching方式，Git 2.0版本之前默认是matching，现在默认为simple
+  > 说明：只推送当前分支叫做simple方式；推送所有对应的远程分支的本地分支叫做matching方式，Git 2.0版本之前默认是matching，现在默认为simple
 
 ## git代码提交
 - git status
