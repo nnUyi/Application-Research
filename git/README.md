@@ -83,6 +83,9 @@
 - git fetch [remote]
   > 下载远程仓库的所有变动
 - git reset --hard [remote branch]
-  > `远程仓库代码覆盖本地仓库代码`
+  > 远程仓库代码覆盖本地仓库代码
+- git pull [remote] [local branch]
+  > 将远程仓库的变化与本地分支合并
 
 ## [git撤销修改](https://zhuanlan.zhihu.com/p/22734098)
+- 
