@@ -3,10 +3,10 @@
 <img style='center' src="./data/git.png" width="800"/>
 
 ```bash
-  > Workspace: 工作区
-  > Index/Stage: 缓冲区
-  > Repository: 仓库区(本地仓库)
-  > Remote: 远程仓库
+  (1) Workspace: 工作区
+  (2) Index/Stage: 缓冲区
+  (3) Repository: 仓库区(本地仓库)
+  (4) Remote: 远程仓库
 ```
 
 # git常用命令
@@ -24,7 +24,7 @@
 - git status
   > 查看各个文件的修改状态
 - git diff [filename]
-  > 查看该文件了和上一个版本的差异
+  > 查看工作区文件和暂存区文件的差异
 - git add [filename]|[directory]
   > 将修改的或者新的文件或者文件夹添加到缓冲区
 - git commit -m "[description]"
@@ -65,7 +65,20 @@
 - git branch -dr [remote branch]
   > 删除远程分支
 
+## git状态查看
+- git status
+  > 查看文件变更情况
+- git log
+  > 显示当前分支的版本历史
+- git log --pretty --oneline
+  > 显示当前分支的版本历史（仅显示一行）
+- git diff
+  > 查看暂存区和工作区的代码差异
+- git diff HEAD
+  > 查看工作区与当前分支最新commit之间的差异
+- git reflog
+  > 查看当前分支的最近几次提交
 
-## git状态信息查看
 ## git远程同步
+
 ## git撤销修改
