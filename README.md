@@ -18,3 +18,4 @@
 
 ## Week 4
   - [markdown learning](http://xianbai.me/learn-md/article/about/readme.html)
+  - git learning
