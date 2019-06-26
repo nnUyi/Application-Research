@@ -2,6 +2,11 @@
 
 <img style='center' src="./data/git.png" width="800"/>
 
+> Workspace: 工作区
+> Index/Stage: 缓冲区
+> Repository: 仓库区(本地仓库)
+> Remote: 远程仓库
+
 # git command
 
 ## git代码提交
