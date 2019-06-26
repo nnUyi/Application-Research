@@ -9,8 +9,17 @@
   > Remote: 远程仓库
 ```
 
-# git command
+# git常用命令
 ## git信息配置
+- git config --list
+  - 说明：查看当前Git的配置信息
+- git config --global user.name "[name]"
+  - 说明：设置提交代码时的用户名
+- git config --global user.email "[email]"
+  - 说明：设置提交代码时的用户邮箱
+- git config --global push.default [matching] | [simple]
+  - 说明：只推送当前分支叫做simple方式；推送所有对应的远程分支的本地分支叫做matching方式，Git 2.0版本之前默认是matching，现在默认为simple
+
 ## git代码提交
 - git status
   - 说明：查看各个文件的修改状态
@@ -22,9 +31,13 @@
   - 说明：将add的文件或者文件夹添加到本地仓库
 - git push
   - git push
-    - 说明：当命令行不指定使用<repository>参数推送的位置时，将查询当前分支的branch.*.remote配置以确定要在哪里推送。 如果配置丢失，则默认为origin
-
-  - git push [remote branch] [local branch]
+    - 说明：不带任何参数的git push默认只推送当前分支，当命令行不指定远程分支名，git将查询当前分支的branch.*.remote配置以确定要在往哪里推送
+  - git push origin [local branch]
+    - 说明：将本地分支从本地仓库push到远程分支, 当命令行不指定远程分支名，git将查询当前分支的branch.*.remote配置以确定要在往哪里推送，如果远程主机没有对应地分支则创建一个新的分支
+  - git push [origin] [local branch]:[remote branch]
+    - 说明：将本地指定的分支push到远程指定的分支
+  - git push --all origin
+    - 说明：将所有分支都push到远程主机
 
 ## git分支
 ## git状态信息查看
