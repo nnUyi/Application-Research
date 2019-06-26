@@ -24,7 +24,6 @@
   - git push
     - 说明：当命令行不指定使用<repository>参数推送的位置时，将查询当前分支的branch.*.remote配置以确定要在哪里推送。 如果配置丢失，则默认为origin
 
-
   - git push [remote branch] [local branch]
 
 ## git分支
