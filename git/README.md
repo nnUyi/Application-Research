@@ -1,6 +1,6 @@
 # Git结构
 
-<p style='text-align: center;'><img src="./data/git.png" width="800"/></p>
+<img style='center' src="./data/git.png" width="800"/>
 
 # git command
 
