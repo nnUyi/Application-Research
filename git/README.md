@@ -40,6 +40,32 @@
     > 将所有分支都push到远程主机
 
 ## git分支
+------------------------------------------
+- git branch
+  > 查看本地所有分支
+- git branch -r
+  > 查看远程所有分支
+- git branch -a
+  > 查看本地和远程所有分支
+- git branch [branch name]
+  > 在本地新建一个分支，但是依然停留在当前分支
+- git checkout -b [branch name]
+  > 在本地新建一个分支，并切换到该分支
+- git checkout [branch name]
+  > 切换到指定分支，并更新工作区
+- git branch --track [branch] [remote-branch]
+  > 新建一个分支，与指定的远程分支建立追踪关系
+- git branch --set-upstream-to=[remote branch]
+  > 在现有分支与指定的远程分支之间建立追踪关系
+------------------------------------------
+- git branch -d [branch name]
+  > 删除本地分支
+- git push origin --delete [branch name]
+  > 删除远程分支
+- git branch -dr [remote branch]
+  > 删除远程分支
+
+
 ## git状态信息查看
 ## git远程同步
 ## git撤销修改
