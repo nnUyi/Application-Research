@@ -88,4 +88,23 @@
   > 将远程仓库的变化与本地分支合并
 
 ## [git撤销修改](https://zhuanlan.zhihu.com/p/22734098)
-- 
+- git checkout -- [filename]
+  > 取消对文件的修改
+- git checkout [filename]
+  > 恢复暂存区的文件到工作区
+- git checkout .
+  > 恢复暂存区的所有文件到工作区
+- git reset HEAD [filename]
+  > 取消git add操作
+- git reset --mixed | --soft | --hard HEAD^
+  > 取消git commit操作， 其中--mixed表示不删除工作空间改动的代码，撤销commit和add，这是默认参数，--soft不删除改动的代码，撤销commit，不撤销add，--hard删除改动的代码，撤销commit和add， HEAD^表示上一个版本
+- git commit --amend
+  > 修改上一次commit写错的注释
+
+# git参考文献
+- [git 常用命令](https://www.cnblogs.com/chenwolong/p/GIT.html)
+- [git 教程](https://www.yiibai.com/git)
+- [git 图解](https://zhuanlan.zhihu.com/p/22734098)
+- [git 手册](https://git-scm.com/)
+
+
