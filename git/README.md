@@ -9,7 +9,7 @@
   (4) Remote: 远程仓库
 ```
 
-# git常用命令
+# git命令
 ## git信息配置
 - git config --list
   > 查看当前Git的配置信息
@@ -19,6 +19,16 @@
   > 设置提交代码时的用户邮箱
 - git config --global push.default [matching] | [simple]
   > 只推送当前分支叫做simple方式；推送所有对应的远程分支的本地分支叫做matching方式，Git 2.0版本之前默认是matching，现在默认为simple
+- git config --global color.ui auto
+  > 命令行输出着不同的强调色
+
+## git初始化
+- git clone [remote repo url] [your repo name]
+  > 从远程主机clone代码到本地
+- git init
+  > 初始化本地repo
+- git remote add origin [remote repo url]
+  > 将本地git项目关联到远程
 
 ## git代码提交
 - git status
@@ -55,6 +65,15 @@
   > 删除远程分支
 - git branch -dr [remote branch]
   > 删除远程分支
+------------------------------------------
+- git rm [filename]
+  > 删除本地分支某个文件
+- git add .
+  > 将本地修改添加到缓冲区
+- git commit -m 'comments'
+  > 将修改添加到本地仓库
+- git push [remote] [local branch]:[remote branch]
+  > 将本地指定的分支push到远程指定的分支
 
 ## git状态查看
 - git status
@@ -84,6 +103,8 @@
   > 下载远程仓库的所有变动
 - git reset --hard [remote branch]
   > 远程仓库代码覆盖本地仓库代码
+- git merge [branch] | [remote branch]
+  > 将某个分支或者某个远程分支合并到当前分支
 - git pull [remote] [local branch]
   > 将远程仓库的变化与本地分支合并
 
@@ -101,10 +122,10 @@
 - git commit --amend
   > 修改上一次commit写错的注释
 
-# git参考文献
+# git文献
 - [git 常用命令](https://www.cnblogs.com/chenwolong/p/GIT.html)
 - [git 教程](https://www.yiibai.com/git)
 - [git 图解](https://zhuanlan.zhihu.com/p/22734098)
-- [git 手册](https://git-scm.com/)
+- [git 手册](https://git-scm.com/book/en/v2)
 
 
