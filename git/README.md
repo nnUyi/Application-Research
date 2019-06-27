@@ -1,4 +1,4 @@
-# Git结构
+# git结构
 
 <img style='center' src="./data/git.png" width="800"/>
 
