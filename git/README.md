@@ -1,6 +1,7 @@
 # git结构
-
-<img style='center' src="./data/git.png" width="800" div align=center />
+<div style="text-align: center;">
+  <img style='center' src="./data/git.png" width="800"/>
+</div>
 
 ```bash
   (1) Workspace: 工作区
