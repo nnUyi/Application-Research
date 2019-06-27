@@ -123,7 +123,7 @@
   > 修改上一次commit写错的注释
 
 # git文献
-- [git 常用命令](https://www.cnblogs.com/chenwolong/p/GIT.html)
+- [git 命令](https://www.cnblogs.com/chenwolong/p/GIT.html)
 - [git 教程](https://www.yiibai.com/git)
 - [git 图解](https://zhuanlan.zhihu.com/p/22734098)
 - [git 手册](https://git-scm.com/book/en/v2)
