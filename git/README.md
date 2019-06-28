@@ -139,6 +139,8 @@
   > 删除本地tag
 - git push origin :refs/tags/[tagname]
   > 删除远程tag
+- git checkout -b [branchname] [tagname]
+  > 新建一个分支，指向某个tag
 
 # git文献
 - [git 命令](https://www.cnblogs.com/chenwolong/p/GIT.html)
