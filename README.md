@@ -2,7 +2,8 @@
   Summary in the period of Intern in Tencent
 
 ## Week 1
-  Nothing but ...
+  - installing and configuring work environment
+  - knowing how cfm wrok
 
 ## Week 2 
   - memory analysis
