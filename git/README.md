@@ -131,6 +131,14 @@
   > 也可以给历史版本打标签，先使用git log找到对应commit的id，然后给对应的commit id打标签
 - git tag -a [tagname] -m "description" [commit id]
   > 给对应commit id打标签并写描述内容
+- git push [remote] [tagname]
+  > 提交tag到远程主机
+- git push [remote] --tags
+  > 提交所有tag到远程主机
+- git tag -d [tagname]
+  > 删除本地tag
+- git push origin :refs/tags/[tagname]
+  > 删除远程tag
 
 # git文献
 - [git 命令](https://www.cnblogs.com/chenwolong/p/GIT.html)
