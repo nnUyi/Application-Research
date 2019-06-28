@@ -120,6 +120,18 @@
 - git commit --amend
   > 修改上一次commit写错的注释
 
+## git打标签
+- git tag
+  > 查看所有标签名
+- git show [tagname]
+  > 查看对应标签名的commit情况
+- git tag [tagname]
+  > 给当前分支的最新commit打标签
+- git tag [tagname] [commit id]
+  > 也可以给历史版本打标签，先使用git log找到对应commit的id，然后给对应的commit id打标签
+- git tag -a [tagname] -m "description" [commit id]
+  > 给对应commit id打标签并写描述内容
+
 # git文献
 - [git 命令](https://www.cnblogs.com/chenwolong/p/GIT.html)
 - [git 教程](https://www.yiibai.com/git)
