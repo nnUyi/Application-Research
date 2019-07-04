@@ -26,4 +26,4 @@
 ## Week 5
   - merge code
   - linux tutorial
-
+  - [ppt template](http://www.ypppt.com/)
