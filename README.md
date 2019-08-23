@@ -6,6 +6,7 @@
   - anaconda
   - pycharm
   - git
+  - autopep8
 
 - connecting tool
   - xshell
