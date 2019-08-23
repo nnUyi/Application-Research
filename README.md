@@ -8,9 +8,9 @@
     - font: file->setting->Editor->General->Font
     - color: file->setting->Editor->Color Scheme->Debugger->Monokai
     - add anaconda interpreter: file->setting->project->project interpreter
-
   - git
   - autopep8
+    - autopep8 in pycharm: https://segmentfault.com/a/1190000005816556
 
 - connecting tool
   - xshell
