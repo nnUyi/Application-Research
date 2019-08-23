@@ -1,6 +1,21 @@
 # Intern
   Summary in the period of Intern in Tencent
 
+## Tools
+- develop tool
+  - anaconda
+  - pycharm
+  - git
+
+- connecting tool
+  - xshell
+
+- editing tool
+  - notepad++
+
+- others
+  - xmind
+
 ## Week 1
   - installing and configuring work environment
   - knowing how cfm wrok
@@ -36,3 +51,6 @@
 
 ## Week8
   - rule of 108 weapon
+
+## Week9
+  - optim sniper, dagger, projectile etc.
