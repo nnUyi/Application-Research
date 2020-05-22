@@ -147,5 +147,6 @@
 - [git 教程](https://www.yiibai.com/git)
 - [git 图解](https://zhuanlan.zhihu.com/p/22734098)
 - [git 手册](https://git-scm.com/book/en/v2)
+- [github help](https://help.github.com/en/github/using-git/dealing-with-non-fast-forward-errors)
 
 
