@@ -1,5 +1,5 @@
-## shell
-- [shell](https://www.runoob.com/linux/linux-shell-basic-operators.html)
+### shell cmd
+- [shell cmd](https://www.runoob.com/linux/linux-shell-basic-operators.html)
 
 ### sed
 - [sed](https://www.runoob.com/linux/linux-comm-sed.html)
