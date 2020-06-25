@@ -1,5 +1,5 @@
-# Intern
-  Summary in the period of Intern in Tencent
+# Application Research
+  Summary in the period of Application Research in Tencent
 
 ## Tools
 - develop tool
@@ -38,8 +38,6 @@
   - [markdown tutorial](http://xianbai.me/learn-md/article/about/readme.html)
 
 ## Week 4
-  - [markdown learning](http://xianbai.me/learn-md/article/about/readme.html)
-  - [git learning](https://github.com/nnUyi/Intern/tree/master/git)
   - ICME 2019 Poster
   - cache header
   
@@ -59,3 +57,10 @@
 
 ## Week9
   - optim sniper, dagger, projectile etc.
+
+## Tools
+ - [markdown](http://xianbai.me/learn-md/article/about/readme.html)
+ - [git](https://github.com/nnUyi/Intern/tree/master/git)
+ - [vim](https://github.com/nnUyi/Intern/tree/master/vim)
+ - [shell](https://github.com/nnUyi/Intern/tree/master/shell)
+  
