@@ -61,7 +61,8 @@
 ## Tools
  - [markdown](http://xianbai.me/learn-md/article/about/readme.html)
  - [git](https://github.com/nnUyi/Intern/tree/master/git)
- - [vim](https://github.com/nnUyi/Intern/tree/master/vim)
+ - [vim keyboard](https://github.com/nnUyi/Intern/tree/master/vim)
+ - [vim tutorial](https://github.com/wsdjeg/vim-galore-zh_cn)
  - [shell](https://github.com/nnUyi/Intern/tree/master/shell)
  - [docker](https://yeasy.gitbook.io/docker_practice/)
   
