@@ -96,6 +96,30 @@ class DataProcess(mp.Process):
     def your_func(self):
         pass
 
+'''
+    multiprocessing.Pool(使用线程池)
+'''
+
+class ProcessPool(object):
+    def __init__(self, pool_num, pool_func):
+        self.pool_num = min(mp.cpu_count() - 1, pool_num)
+        self.pool = mp.Pool(self.pool_num)
+        self.pool_func = pool_func
+    
+    def pool_apply_async(self, pool_args):
+        result = self.pool.apply_async(self.pool_func, args=pool_args)
+        # result = self.pool.map(self.pool_func, [pool_args])
+        return result
+
+    def pool_batch_processing(self, pool_args_ls):
+        results = self.pool.map(self.pool_func, pool_args_ls)
+        self.pool_wait()
+        return results
+    
+    def pool_wait(self):
+        self.pool.close()
+        self.pool.join()
+
 if __name__ == '__main__':
     test_threading()
     test_multiprocessing()
