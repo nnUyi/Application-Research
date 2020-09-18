@@ -107,7 +107,7 @@ class ProcessPool(object):
         self.pool_func = pool_func
     
     def pool_apply_async(self, pool_args):
-        result = self.pool.apply_async(self.pool_func, args=pool_args)
+        result = self.pool.apply_async(self.pool_func, args=tuple(pool_args))
         # result = self.pool.map(self.pool_func, [pool_args])
         return result
 
