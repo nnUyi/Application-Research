@@ -41,6 +41,8 @@
 # Distributed under the terms of *** license
 ```
 
+- python format tools: pylint, flake8, black, EditorConfig
+
 ### cpp
 ```cpp
 /* 
