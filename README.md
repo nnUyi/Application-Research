@@ -1,5 +1,5 @@
 # Application Research
-  Summary in the period of Application Research in Tencent
+  Application Research in Tencent
 
 ## Tools
 - develop tool
@@ -21,43 +21,6 @@
 - others
   - xmind
 
-## Week 1
-  - installing and configuring work environment
-  - knowing how cfm wrok
-
-## Week 2 
-  - memory analysis
-  - multiple threads
-  - shared memory read/write
-
-## Week 3
-  - git merge
-  - multi-processes for data preprocessing
-  - logging usage
-  - offline cache generator
-  - [markdown tutorial](http://xianbai.me/learn-md/article/about/readme.html)
-
-## Week 4
-  - ICME 2019 Poster
-  - cache header
-  
-## Week 5
-  - merge code
-  - [linux tutorial](https://www.linuxcool.com/)
-  - [ppt template](http://www.ypppt.com/)
-
-## Week6
-  - GAP
-
-## Week7
-  - ray cast vs cache
-
-## Week8
-  - rule of 108 weapon
-
-## Week9
-  - optim sniper, dagger, projectile etc.
-
 ## Tools
  - [markdown](http://xianbai.me/learn-md/article/about/readme.html)
  - [git](https://github.com/nnUyi/Intern/tree/master/git)
@@ -67,3 +30,23 @@
  - [docker](https://yeasy.gitbook.io/docker_practice/)
  - [github docs](https://docs.github.com/cn)
   
+## .py & .cpp title format
+### python
+```python
+#!/usr/bin/python
+# encoding=utf-8
+# my_py_module.py
+# Copyright (C) 2020 chadyang <chadyang@***.com>
+# Create time: 2020-09-24 05:20
+# Distributed under the terms of *** license
+```
+
+### cpp
+```cpp
+/* 
+ * my_py_module.cpp/h
+ * Copyright (C) 2020 chadyang <chadyang@***.com>
+ * Create time: 2020-09-24 05:20
+ * Distributed under the terms of *** license
+ */
+```
