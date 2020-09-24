@@ -33,8 +33,8 @@
 ## .py & .cpp title format
 ### python
 ```python
-#!/usr/bin/python
-# encoding=utf-8
+#!/usr/bin/env python2 or python3 or python(for both)
+# -*- coding: utf-8 -*-
 # my_py_module.py
 # Copyright (C) 2020 chadyang <chadyang@***.com>
 # Create time: 2020-09-24 05:20
